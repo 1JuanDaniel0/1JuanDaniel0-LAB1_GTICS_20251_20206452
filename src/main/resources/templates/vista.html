@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Title    </title>
+</head>
+<body>
+    <h1>Carrera de Tortugas</h1>
+    <h2>Elige tu tortuga y realiza tu apuesta</h2>
+
+    <form method="POST" action="/vista/enviar">
+
+        <label for="elegirTortuga">Selecciona tu tortuga: </label>
+        <select id="elegirTortuga">
+            <option value="V">
+                Velocidad (v)
+            </option>
+            <option value="R">
+                Resistencia (R)
+            </option>
+            <option value="S">
+                Suerte (S)
+            </option>
+        </select>
+
+        <label for="tipoPista">Selecciona el tipo de pista: </label>
+        <select id="tipoPista">
+            <option value="sand">
+                Arena
+            </option>
+            <option value="grass">
+                Césped
+            </option>
+            <option value="asf">
+                Asfalto
+            </option>
+        </select>
+
+        <label for="apuesta">Monto a apostar: </label>
+        <input type="number" id="apuesta" placeholder="Ingrese un monto personalizado">
+
+        <button type="submit">¡Iniciar Carrera!</button>
+
+    </form>
+
+</body>
+</html>
